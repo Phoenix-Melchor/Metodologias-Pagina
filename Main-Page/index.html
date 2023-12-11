@@ -12,13 +12,6 @@
             <div class="page-name">
                 EpicureoDiario
             </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search">
-                <button class="delete-all">x</button>
-            </div>
-                <button class="search">
-                    <img src="../images/Search-symbol.png" alt="inf">
-                </button>
         </div>
     </div>
     <div class="main">
@@ -28,23 +21,26 @@
                     <p>Recetas</p>
                     <button class="add-btn">Add +</button>
                 </div>
-
             </div>
             <div class="recetas-bottom-container">
+                <div class="move-buttons">
+                    <button><</button>
+                </div>
                 <div class="recetas-container">
                     <div class="recetas-content">
                         <div class="receta-img">
-                            <img src="../images/pollo empanizado.jpg" alt="img not found">
+                            <img class="imagen" src="../images/pollo empanizado.jpg" alt="img not found">
                         </div>
                         <div class="receta-info">
                             <div class="receta-name">
-                                <p>Pollo Empanizado</p>
+                                <p class="nombre-receta">Pollo Empanizado</p>
                             </div>
                             <div class="info">
-                                <p>Tipo de Cocina: <br>Frito, Sarten</p>
+                                <p>Tipo de Cocina: </p>
+                                <p class="tc">Frito, Sarten</p>
                                 <br>
-                                <p>Ingredientes: 
-                                    <br>
+                                <p>Ingredientes: </p>
+                                <p class="ingredientes">
                                     Pechuga de Pollo,
                                     Harina de Trigo,
                                     Huevos,
@@ -55,72 +51,65 @@
                             </div>
                         </div>
                         <div class="action-buttons">
+                            <button class="instrucciones">Instrucciones</button>
                             <button>share</button>
                             <button>Delete</button>
                             <button>Edit</button>
                         </div>
                     </div>
-                    <div class="recetas-content">
-                        <div class="receta-img">
-                            <img src="../images/pollo empanizado.jpg" alt="img not found">
-                        </div>
-                        <div class="receta-info">
-                            <div class="receta-name">
-                                <p>Pollo Empanizado</p>
-                            </div>
-                            <div class="info">
-                                <p>Tipo de Cocina: <br>Frito, Sarten</p>
-                                <br>
-                                <p>Ingredientes: 
-                                    <br>
-                                    Pechuga de Pollo,
-                                    Harina de Trigo,
-                                    Huevos,
-                                    Pan Rallado,
-                                    Sal,
-                                    Pimienta
-                                </p>
-                            </div>
-                        </div>
-                        <div class="action-buttons">
-                            <button>share</button>
-                            <button>Delete</button>
-                            <button>Edit</button>
-                        </div>
-                    </div>
-                    <div class="recetas-content">
-                        <div class="receta-img">
-                            <img src="../images/pollo empanizado.jpg" alt="img not found">
-                        </div>
-                        <div class="receta-info">
-                            <div class="receta-name">
-                                <p>Pollo Empanizado</p>
-                            </div>
-                            <div class="info">
-                                <p>Tipo de Cocina: <br>Frito, Sarten</p>
-                                <br>
-                                <p>Ingredientes: 
-                                    <br>
-                                    Pechuga de Pollo,
-                                    Harina de Trigo,
-                                    Huevos,
-                                    Pan Rallado,
-                                    Sal,
-                                    Pimienta
-                                </p>
-                            </div>
-                        </div>
-                        <div class="action-buttons">
-                            <button>share</button>
-                            <button>Delete</button>
-                            <button>Edit</button>
-                        </div>
-                    </div>
+                    
                 </div>
-
+                <div class="move-buttons">
+                    <button>></button>
+                </div>
             </div>
         </div>
     </div>
+
+    <template id="recetas-template">
+        <div class="instrucciones-box">
+            <div class="close-button-container">
+                <button class="close-button">X</button>
+            </div>
+            <div class="info-container-ins">
+                <div class="info-instrucciones">
+                    <p class="text-ins"></p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="recetas-content">
+            <div class="receta-img">
+                <img id="imagen" src="../images/pollo empanizado.jpg" alt="img not found">
+            </div>
+            <div class="receta-info">
+                <div class="receta-name">
+                    <p class="nombre-receta">Pollo Empanizado</p>
+                </div>
+                <div class="info">
+                    <p>Tipo de Cocina: </p>
+                    <p class="tc">Frito, Sarten</p>
+                    <br>
+                    <p>Ingredientes: </p>
+                    <p class="ingredientes">
+                        Pechuga de Pollo,
+                        Harina de Trigo,
+                        Huevos,
+                        Pan Rallado,
+                        Sal,
+                        Pimienta
+                    </p>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="instrucciones">Instrucciones</button>
+                <button>share</button>
+                <button>Delete</button>
+                <button>Edit</button>
+            </div>
+        </div>
+    </template>
+
 </body>
 <script src="script.js"></script>
 </html>

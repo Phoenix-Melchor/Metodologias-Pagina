@@ -127,13 +127,15 @@
     border-bottom: 1px solid gray;
     height: 90%;
     width: 90%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     align-items: center;
+    padding-left: 1%;
 }
 
 .recetas-content{
-    width: 32%;
+    width: 95%;
     height: 95%;
     display: flex;
     flex-direction: column;
@@ -179,13 +181,13 @@
 .action-buttons{
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 5%;
     height: 10%;
 }
 
 .action-buttons button{
-    width: 30%;
+    width: 22%;
     height: 100%;
     border-radius: 10px;
     border: 0px;
@@ -194,4 +196,56 @@
 
 .action-buttons button:hover{
     background-color: gray;
+}
+
+.instrucciones-box{
+    display: none;
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    background-color: whitesmoke;
+}
+
+.close-button-container{
+    display: flex;
+    justify-content: end;
+    font-size: 30px;
+    width: 100%;
+    height: 5%;
+}
+
+.close-button{
+    width: 2%;
+    background-color: transparent;
+    border: 0px;
+}
+
+.info-container-ins{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+}
+
+.info-instrucciones{
+    width: 90%;
+    height: 95%;
+    color: black;
+}
+
+.text-ins{
+    white-space: pre-line;
+    font-size: larger;
+}
+.move-buttons{
+    border: 1px solid black;
+    width: 1.5%;
+    height: 70%;
+}
+
+.move-buttons button{
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
 }
