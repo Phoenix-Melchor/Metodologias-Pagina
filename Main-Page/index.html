@@ -12,6 +12,9 @@
             <div class="page-name">
                 EpicureoDiario
             </div>
+            <div class="timer-button">
+                <button class="timer">Timer</button>
+            </div>
         </div>
     </div>
     <div class="main">
@@ -24,7 +27,7 @@
             </div>
             <div class="recetas-bottom-container">
                 <div class="move-buttons">
-                    <button><</button>
+                    <button id="left"><</button>
                 </div>
                 <div class="recetas-container">
                     <div class="recetas-content">
@@ -53,18 +56,20 @@
                         <div class="action-buttons">
                             <button class="instrucciones">Instrucciones</button>
                             <button>share</button>
-                            <button>Delete</button>
-                            <button>Edit</button>
+                            <button class="delete-button">Delete</button>
+                            <button class="edit-button">Edit</button>
                         </div>
                     </div>
                     
                 </div>
                 <div class="move-buttons">
-                    <button>></button>
+                    <button id="right">></button>
                 </div>
             </div>
         </div>
     </div>
+
+
 
     <template id="recetas-template">
         <div class="instrucciones-box">
@@ -76,8 +81,8 @@
                     <p class="text-ins"></p>
                 </div>
             </div>
-            
         </div>
+        
         <div class="recetas-content">
             <div class="receta-img">
                 <img id="imagen" src="../images/pollo empanizado.jpg" alt="img not found">
@@ -104,8 +109,8 @@
             <div class="action-buttons">
                 <button class="instrucciones">Instrucciones</button>
                 <button>share</button>
-                <button>Delete</button>
-                <button>Edit</button>
+                <button class="delete-button">Delete</button>
+                <button class="edit-button">Edit</button>
             </div>
         </div>
     </template>

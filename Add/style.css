@@ -103,19 +103,24 @@ input:focus {
     align-items: center;
 }
 
+.botones-top{
+    width: 15%;
+    height: 100%;
+}
+
 .recetas-title button{
-    width: 5%;
+    width: 40%;
     height: 90%;
     border-radius: 5px;
     border: 0px;
     background-color: rgb(220, 220, 220);
 }
 
-.recetas-title button:hover{
+.botones-top button:hover{
     background-color: rgb(155, 155, 155);
 }
 
-.recetas-title button:hover{
+.botones-top button:hover{
     background-color: rgb(155, 155, 155);
 }
 
@@ -134,7 +139,7 @@ input:focus {
 /*----------------------------------------------------------------------------------*/
 
 .data-container{
-    border: 1px solid red;
+    border-bottom: 1px solid gray;
     width: 90%;
     height: 90%;
 }
@@ -179,15 +184,12 @@ input:focus {
 }
 
 .bottom-container{
-    border: 1px solid red;
     width: 100%;
     height: 80%;
     display: flex;
-
 }
 
 .ingredientes{
-    border: 1px solid red;
     height: 100%;
     width: 50%;
     display: flex;
@@ -196,10 +198,27 @@ input:focus {
     font-size: 20px;
 }
 
+.instruccion{
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instruccion input{
+    width: 90%;
+    height: 80%;
+    border: 0px;
+}
+
 .ingredientes-container{
-    border: 1px solid red;
+    border: 1px solid black;
     height: 85%;
     width: 85%;
+    overflow-y: auto;
 }
 
 .instrucciones{
@@ -212,9 +231,10 @@ input:focus {
 }
 
 .instrucciones-container{
-    border: 1px solid red;
+    border: 1px solid black;
     height: 85%;
     width: 85%;
+    overflow-y: auto;
 }
 
 .ingrediente{
@@ -230,4 +250,5 @@ input:focus {
 .ingrediente input{
     width: 90%;
     height: 80%;
+    border: 0px;
 }

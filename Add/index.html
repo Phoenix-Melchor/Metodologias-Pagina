@@ -12,13 +12,6 @@
             <div class="page-name">
                 EpicureoDiario
             </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search">
-                <button class="delete-all">x</button>
-            </div>
-                <button class="search">
-                    <img src="../images/Search-symbol.png" alt="inf">
-                </button>
         </div>
     </div>
     <div class="main">
@@ -26,36 +19,51 @@
             <div class="recetas-top-container">
                 <div class="recetas-title">
                     <p>Add</p>
-                    <button class="return-btn">return</button>
+                    <div class="botones-top">
+                        <button class="save-btn">Add +</button>
+                        <button class="return-btn">return</button>
+                    </div>
+                    
                 </div>
             </div>
             <div class="recetas-bottom-container">
                 <div class="data-container">
                     <div class="nombre-receta">
                         <p>Nombre</p>
-                        <input type="text" placeholder="Nombre">
+                        <input id="nombre-recetas" type="text" placeholder="Nombre">
                     </div>
                     <div class="tipo-cocina">
                         <p>Tipo de Cocina</p>
-                        <input type="text" placeholder="Tipo de Cocina">
+                        <input id="nombre-cocina-receta" type="text" placeholder="Tipo de Cocina">
                     </div>
                     <div class="bottom-container">
                         <div class="ingredientes">
                             <p>Ingredientes</p>
                             <div class="ingredientes-container">
                                 <div class="ingrediente">
-                                    <input type="text">
+                                    <input class="ingrediente-input" type="text">
                                 </div>
                             </div>
-                            <button class="ingredientes-add">Add</button>
+                            <div>
+                                <button class="ingredientes-add">Add</button>
+                                <button class="ingredientes-delete">Delete</button>
+                            </div>
+                            
                         </div>
                         <div class="instrucciones">
                             <p>Instrucciones</p>
                             <div class="instrucciones-container">
-        
+                                <div class="instruccion">
+                                    <input class="instruccion-input" type="text">
+                                </div>
                             </div>
-                            <button class="instrucciones-add">Add</button>
+                            <div>
+                                <button class="instrucciones-add">Add</button>
+                                <button class="instrucciones-delete">Delete</button>
+                            </div>
+                            
                         </div>
+
                     </div>
                 </div>
             </div>
