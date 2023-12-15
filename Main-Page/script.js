@@ -26,8 +26,8 @@ console.log(horas)
 hrsinc.addEventListener('click', function(){
     if(hrs.innerText == '24'){}
     else {hrs = String(parseInt(hrs) + 1)}
-})
-*/
+})*/
+
 //-------------------------------------
 
 let firstone = 0

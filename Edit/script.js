@@ -102,7 +102,14 @@ save_btn.addEventListener('click', function(){
     else if(tipo_cocina.value == ''){
         alert("Escribe el tipo de cocina")
     }
-    sendApiData()
+    else if(ingrediente_input.value == ''){
+        alert("Escribe al menos 1 ingrediente")
+    }
+    else if(instruccion_input.value == ''){
+        alert("Escribe al menos 1 instruccion")
+    }
+    else{sendApiData()}
+
 })
 
 function sendApiData(){

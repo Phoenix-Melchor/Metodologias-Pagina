@@ -44,7 +44,7 @@ export const updateReceta = async (id: number, receta: IReceta) => {
     if (!foundreceta) return { message: 'Receta no encontrada' };
 
     foundreceta.nombre = receta.nombre
-    foundreceta.tipo_cocina = receta.nombre
+    foundreceta.tipo_cocina = receta.tipo_cocina
     foundreceta.ingredientes = receta.ingredientes
     foundreceta.instrucciones = receta.instrucciones
     

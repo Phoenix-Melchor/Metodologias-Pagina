@@ -173,7 +173,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: auto;
 }
 
 .receta-img img{
@@ -192,6 +191,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 5%;
+    width: 100%;
+    overflow-y: auto;
 }
 
 .info p{
